@@ -52,9 +52,17 @@
     
 
     <div class="content">
-        <h1 class='text-blue-700 font-extrabold text-8xl mt-32 ml-20'>
+        <h1 class='text-blue-700 font-extrabold text-8xl mt-20 ml-20 mb-10'>
             Available Positions
           </h1>
+
+          <p class="w-1/3 ml-20 mt-10 mb-3 text-left rtl:text-right text-blue-700 font-semibold">Track work across the enterprise through an open, collaborative platform. Link issues across Jira and ingest data from other software development tools, 
+            so your IT support and operations teams have richer contextual 
+            information to rapidly respond to requests, incidents, and changes.</p>
+          
+            <p class="w-1/3 ml-20 mt-10 mb-3 text-left rtl:text-right text-blue-700 font-semibold">Track work across the enterprise through an open, collaborative platform. Link issues across Jira and ingest data from other software development tools, 
+              so your IT support and operations teams have richer contextual 
+              information to rapidly respond to requests, incidents, and changes.</p>
       
     </div>
     <!-- The content section will be above the floating bubbles -->

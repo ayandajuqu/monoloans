@@ -30,10 +30,10 @@
 
 <section class="bg-indigo-200 p-8 rounded-lg w-full max-w-2xl mx-auto mt-24">
   <form class="flex flex-col space-y-6" on:submit={handleSubmit}>
-    <h3 class="text-blue-900 font-extrabold text-2xl text-left mb-2 mt-2 mb-4">Apply Now</h3>
+    <h3 class="text-blue-900 font-extrabold text-2xl text-left mb-2 mt-2 mb-4">Apply for Loan</h3>
 
     <Label class="space-y-2">
-      <h4 class="text-blue-900 font-bold">Full Name (As Per ID)</h4>
+      <h4 class="text-blue-900 font-bold">Full Name (As per ID)</h4>
       <Input 
         type="text" 
         name="firstName" 

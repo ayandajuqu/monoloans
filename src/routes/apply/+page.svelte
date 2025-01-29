@@ -51,7 +51,7 @@
   <section class='bg-orange-50 h-screen p-0 m-0 overflow-y-auto'>
     <Navbar />
     <h1 class='text-indigo-700 font-extrabold text-8xl mt-10 ml-20'>
-      Start Application Process..
+      Start Loan Application..
     </h1>
   
     
