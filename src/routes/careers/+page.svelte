@@ -1,6 +1,7 @@
 <script>
     import Navbar from "../../components/navbar.svelte";
     import Jobs from "../../components/tables/jobs.svelte";
+    
   
     // Function to generate random floating elements
     const floatingElements = Array(20)
@@ -13,7 +14,6 @@
         delay: Math.random() * 5
       }));
   </script>
-  
   <style>
     @keyframes float {
       0% {

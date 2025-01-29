@@ -1,6 +1,8 @@
 <script>
   import { Button, Label, Input, Textarea } from 'flowbite-svelte';
   import Popup from "../../components/modals/popup.svelte";
+
+  let formModal=false;
   
   let textareaprops = {
     id: 'message',
@@ -25,6 +27,8 @@
     // Add any logic to handle the form submission here, like sending data to an API.
   }
 </script>
+
+<Popup bind:open={formModal}/>
 
 <section class="bg-blue-700 border border-blue-700 p-8 rounded-lg w-full max-w-lg mx-auto mt-10">
   <form class="flex flex-col space-y-6" on:submit={handleSubmit}>
@@ -63,6 +67,7 @@
     
     <Button 
       type="submit" 
+      on:click={() => formModal = true}
       class="w-full bg-blue-700 text-lime-200 border-2 border-lime-200 hover:border-0 hover:text-bold hover:bg-lime-200 hover:text-blue-700"
     >
       Submit

@@ -1,16 +1,16 @@
 <script>
     import { Button, Modal } from 'flowbite-svelte';
-    import { ExclamationCircleOutline } from 'flowbite-svelte-icons';
-    let popupModal = false;
+    import { GiftBoxSolid } from 'flowbite-svelte-icons';
+    export let open = false;
   </script>
   
-  <Button on:click={() => (popupModal = true)}>Pop-up modal</Button>
   
-  <Modal bind:open={popupModal} size="xs" autoclose>
+  
+  <Modal bind:open={open} size="md" autoclose class="bg-orange-50">
     <div class="text-center">
-      <ExclamationCircleOutline class="mx-auto mb-4 text-gray-400 w-12 h-12 dark:text-gray-200" />
-      <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">Are you sure you want to proceed with the submission?</h3>
-      <Button color="green" class="me-2">Yes, I'm sure</Button>
-      <Button color="alternative">No, cancel</Button>
+      <GiftBoxSolid class="mx-auto mb-4 text-blue-700 w-12 h-12 " />
+      <h3 class="mb-5 text-2xl font-extrabold text-blue-700">Thank You for Reaching Out!</h3>
+      <p class="mb-2 text-lg font-semibold text-blue-700">A confirmation email has been sent to you.<br/>One of our consultants will be reaching out to you soon!</p>
+      
     </div>
   </Modal>

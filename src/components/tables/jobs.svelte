@@ -2,7 +2,7 @@
 <script>
     import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell, Button } from 'flowbite-svelte';
     import JobApplicationModal from '../modals/jobApplication.svelte';
-
+    
     let formModal = false;
 </script>
 
