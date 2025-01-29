@@ -11,9 +11,9 @@
   };
   </script>
   
-  <Button on:click={() => (formModal = true)}>Form modal</Button>
+
   
-  <Modal bind:open={formModal} size="xs" autoclose={false} class="w-full bg-indigo-200">
+  <Modal open={true} size="xs" autoclose={false} class="w-full bg-indigo-200 mt-10 ml-20">
     <form class="flex flex-col space-y-6" action="#">
       <h3 class="text-blue-900 font-extrabold text-2xl text-left mb-2 mt-10  mb-4">Sign in to our platform</h3>
       <Label class="space-y-2">

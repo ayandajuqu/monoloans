@@ -20,9 +20,9 @@
   </script>
   
   <div class="flex flex-col items-center">
-    <span bind:this={counterRef} class="text-6xl font-bold text-blue-700">0</span>
+    <span bind:this={counterRef} class="text-8xl font-extrabold text-lime-200">0</span>
     {#if label}
-      <p class="text-lg text-gray-600">{label}</p>
+      <h5 class="text-lg font-extrabold text-lime-200">{label} </h5>
     {/if}
   </div>
   
