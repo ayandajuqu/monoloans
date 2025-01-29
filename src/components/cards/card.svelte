@@ -10,12 +10,12 @@
     export let icon = GiftBoxSolid; 
   </script>
   
-  <Card class="bg-orange-50 border-2 border-blue-700 mt-10 p-10 transition duration-500 hover:scale-125">
+  <Card class="w-96 h-64 rounded-2xl bg-orange-50 border border-blue-700 mt-20 ml-20 transition duration-500 hover:-translate-y-4">
 
     <a href={linkHref}>
-      <h5 class="mb-3 text-xl font-semibold tracking-tight text-blue-700 ">{title}</h5>
+      <h5 class="mb-3 text-2xl font-bold tracking-tight text-blue-700 ">{title}</h5>
     </a>
-    <p class="mb-10 text-sm font-normal text-blue-700 ">{description}</p>
+    <p class="mb-10 text-base font-normal text-blue-700 ">{description}</p>
     <a href={linkHref} class="inline-flex items-center text-primary-600 hover:underline">
       {linkText}
       <ArrowUpRightFromSquareOutline class="w-4 h-4 ms-2.5" />

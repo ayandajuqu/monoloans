@@ -1,15 +1,18 @@
 <script>
     import Navbar from '../components/navbar.svelte';
     import Intro from '../components/intro.svelte';
-    import Modal from '../components/modals/contactModal.svelte'
-    import Geometry from '../components/geometry.svelte';
-  import ReviewCard from '../components/cards/reviewCard.svelte';
+    import SucessStory from '../components/sucessStory.svelte';
+    import Statistics from '../components/statistics.svelte';
+   
   </script>
   
   
-  <div class="p-8">
+  <div class="w-full p-0 m-0 bg-orange-50">
     <Navbar/>
     <Intro/>
+    <Statistics/>
+    <SucessStory/>
+    
     
   </div>
 

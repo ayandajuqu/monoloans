@@ -1,12 +1,22 @@
-<script>
-    import { Card, Button,Avatar  } from 'flowbite-svelte';
-    import image from '../../../static/female-avatar-girl-face-woman-user-9.svg'
-  </script>
+<script lang="ts">
+  import { Card, Avatar, Rating } from 'flowbite-svelte';
+  import { GiftBoxSolid, ArrowUpRightFromSquareOutline } from 'flowbite-svelte-icons';
+  import image1 from '../../public/favicon.png'
   
-  <div class="space-y-4">
-    <Card >
-        <Avatar size="lg" src='../../../static/female-avatar-girl-face-woman-user-9.svg' />
-      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-tight">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-    </Card>
+  
+  export let title: string = "Ayanda Juqu";
+  export let description: string = "bbbbbbbbbbbbbbbb fghjkllfgh wtghvnfim wbtngimyh,o bluh blhu bluh bluh bhlu bluh blhu bhlujb bhnhmhujnb  urpbiylun bjhunjhn ";
+
+</script>
+
+<Card class="w-100 h-100 rounded-2xl bg-indigo-200 border border-blue-700 mt-10 ml-20 hover:bg-lime-200 hover:border-0 transition duration-500 hover:-translate-y-4">
+
+  <div class="flex flex-col items-center pb-4">
+    <Avatar size="lg" src={image1} class="mb-4" />
+    <Rating id="example-3" total={5} rating={5} iconFillColor='#1565c0' iconStrokeColor='#1565c0'/>
+    <h5 class="mt-4 mb-3 text-2xl font-bold tracking-tight text-blue-700 ">{title}</h5>
+    <p class="mb-10 text-base font-normal text-blue-700 ">{description}</p>
   </div>
+
+ 
+</Card>
