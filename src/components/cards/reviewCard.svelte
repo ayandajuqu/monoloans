@@ -1,9 +1,9 @@
 <script lang="ts">
   import { Card, Avatar, Rating } from 'flowbite-svelte';
   import { GiftBoxSolid, ArrowUpRightFromSquareOutline } from 'flowbite-svelte-icons';
-  import image1 from '../../public/favicon.png'
   
   
+  export let image1: string='../../public/favicon.png'
   export let title: string = "Ayanda Juqu";
   export let description: string = "bbbbbbbbbbbbbbbb fghjkllfgh wtghvnfim wbtngimyh,o bluh blhu bluh bluh bhlu bluh blhu bhlujb bhnhmhujnb  urpbiylun bjhunjhn ";
 
@@ -15,7 +15,7 @@
     <Avatar size="lg" src={image1} class="mb-4" />
     <Rating id="example-3" total={5} rating={5} iconFillColor='#1565c0' iconStrokeColor='#1565c0'/>
     <h5 class="mt-4 mb-3 text-2xl font-bold tracking-tight text-blue-700 ">{title}</h5>
-    <p class="mb-10 text-base font-normal text-blue-700 ">{description}</p>
+    <p class="mb-10 text-base font-semibold text-blue-700 ">{description}</p>
   </div>
 
  

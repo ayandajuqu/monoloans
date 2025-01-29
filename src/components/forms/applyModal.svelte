@@ -28,7 +28,7 @@
   }
 </script>
 
-<section class="bg-indigo-200 p-8 rounded-lg w-full max-w-2xl mx-auto mt-24">
+<section class="bg-indigo-200 p-8 rounded-lg w-full max-w-2xl mx-auto mt-8">
   <form class="flex flex-col space-y-6" on:submit={handleSubmit}>
     <h3 class="text-blue-900 font-extrabold text-2xl text-left mb-2 mt-2 mb-4">Apply for Loan</h3>
 

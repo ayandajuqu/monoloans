@@ -4,6 +4,7 @@
       <span>MonoLoans</span>
     </div>
     <ul class="flex space-x-6 text-blue-700 text-lg">
+      <li><a href="/" class="hover:underline">Home</a></li>
       <li><a href="/about-us" class="hover:underline">About Us</a></li>
       <li><a href="/apply" class="hover:underline">Apply Now</a></li>
       <li><a href="/careers" class="hover:underline">Careers</a></li>

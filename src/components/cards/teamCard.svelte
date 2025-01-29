@@ -2,11 +2,11 @@
     export let name = "Jen Harris";
     export let title = "Partner";
     export let description = "I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click \"Edit Text\" or double click me to add your own content and make changes to the font.";
-    export let linkedinUrl = "#";
+    export let linkedinUrl = "https://www.linkedin.com/in/ayanda-juqu-67a655300/";
     export let imageUrl = "/path-to-profile-image.jpg";
   </script>
   
-  <div class=" mt-10 max-w-2xl ml-20 p-6 bg-blue-700 text-lime-200 border border-lime-200 rounded-2xl shadow-sm hover:bg-lime-200 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-blue-700">
+  <div class=" mt-10 max-w-2xl ml-20 p-6 bg-blue-700 text-lime-200 border-2 border-lime-200 rounded-2xl shadow-sm hover:bg-lime-200 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-blue-700">
     <div class="flex items-start gap-6">
       <!-- Profile Image -->
       <div class="flex-shrink-0">
@@ -30,7 +30,7 @@
         </p>
   
         <!-- Description -->
-        <p class=" mb-4">
+        <p class=" mb-4 font-semibold">
           {description}
         </p>
   

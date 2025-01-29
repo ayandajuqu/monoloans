@@ -10,16 +10,20 @@
     </h1>
     <!-- <h3 class="text-blue-700 mb-6 p-8">Where dreams become reality</h3> -->
     <Button
-      class="ml-20 mt-10 rounded-full bg-orange-50 border border-blue-700 text-blue-700 hover:bg-blue-700 hover:text-lime-200 text-base font-bold px-8 py-3.5"
-    >
+      href="/apply" class="ml-20 mt-10 rounded-full bg-orange-50 border border-blue-700 text-blue-700 hover:bg-blue-700 hover:text-lime-200 text-base font-bold px-8 py-3.5 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-125">
       Start Appliction Today!
     </Button>
 
     <Geometry/>
     <div class="flex ">
       
-      <Card/>
-      <Card/>
+      <Card
+      title="Need a Student Loan?"
+      description="Get flexible, low-interest student loans to fund your education with ease. Apply today and invest in your future!"
+      />
+      <Card
+      title="Need a Personal Loan?"
+      description="Get quick and hassle-free personal loans with flexible repayment options. Apply now and take control of your finances!"/>
     </div>
 </section>
   

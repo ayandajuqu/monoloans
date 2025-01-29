@@ -5,8 +5,8 @@
     
     export let title: string = "Need a help in Claim?";
     export let description: string = "bbbbbbbbbbbbbbbb fghjkllfgh wtghvnfim wbtngimyh,o bluh blhu bluh bluh bhlu bluh blhu bhlujb bhnhmhujnb  urpbiylun bjhunjhn ";
-    export let linkText: string = "See our guideline";
-    export let linkHref: string = "/";
+    export let linkText: string = "See our terms and conditions";
+    export let linkHref: string = "https://www.linkedin.com/in/ayanda-juqu-67a655300/";
     export let icon = GiftBoxSolid; 
   </script>
   
