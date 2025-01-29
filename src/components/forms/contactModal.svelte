@@ -1,5 +1,6 @@
 <script>
   import { Button, Label, Input, Textarea } from 'flowbite-svelte';
+  import Popup from "../../components/modals/popup.svelte";
   
   let textareaprops = {
     id: 'message',

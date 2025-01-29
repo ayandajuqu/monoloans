@@ -1,7 +1,6 @@
 <script>
-    import ApplyModal from "../../components/forms/applyModal.svelte";
     import Navbar from "../../components/navbar.svelte";
-    import {Button }from 'flowbite-svelte';
+    import Jobs from "../../components/tables/jobs.svelte";
   
     // Function to generate random floating elements
     const floatingElements = Array(20)
@@ -36,37 +35,43 @@
       overflow: auto;
     }
   
-    
+    /* Make sure the bubbles are behind other content */
     .floating-elements {
-      z-index: 1; 
+      z-index: 1; /* Lower z-index */
     }
   
-   
+    /* Make sure the form and navbar are above the floating elements */
     .content {
       z-index: 10; /* Higher z-index */
-      position: relative; 
+      position: relative; /* Necessary to apply z-index */
     }
   </style>
   
-  <section class='bg-orange-50 h-screen p-0 m-0 overflow-y-auto'>
+  <section class='bg-indigo-200 h-screen p-0 m-0 overflow-y-auto'>
     <Navbar />
-    <h1 class='text-indigo-700 font-extrabold text-8xl mt-10 ml-20'>
-      Start Application Process..
-    </h1>
-  
     
+
     <div class="content">
-      <ApplyModal />
+        <h1 class='text-blue-700 font-extrabold text-8xl mt-32 ml-20'>
+            Available Positions
+          </h1>
+      
+    </div>
+    <!-- The content section will be above the floating bubbles -->
+    <div class="content  flex flex-col justify-center items-center ">
+        <Jobs />
+        
     </div>
   
     <!-- Bubbles will be behind the content -->
     <div class="mt-10 floating-elements absolute inset-0 overflow-hidden">
       {#each floatingElements as element}
         <div
-          class="animate-float absolute rounded-full bg-indigo-700 bg-opacity-10"
+          class="animate-float absolute rounded-full bg-blue-700 bg-opacity-10"
           style="width: {element.size}px; height: {element.size}px; left: {element.left}%; top: {element.top}%; animation-duration: {element.duration}s; animation-delay: {element.delay}s;"
         ></div>
       {/each}
     </div>
+  
   </section>
   

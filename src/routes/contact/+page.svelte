@@ -1,7 +1,7 @@
 <script>
-  import TeamCard from "../../components/cards/teamCard.svelte";
-import ContactModal from "../../components/forms/contactModal.svelte";
+  import ContactModal from "../../components/forms/contactModal.svelte";
   import Navbar from "../../components/navbar.svelte";
+  
 
   // Function to generate random floating elements
   const floatingElements = Array(20)
