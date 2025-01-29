@@ -1,0 +1,70 @@
+<script>
+  import { Button, Label, Input, Textarea } from 'flowbite-svelte';
+  
+  let textareaprops = {
+    id: 'message',
+    name: 'message',
+    label: 'Your message',
+    rows: 4,
+    placeholder: 'Write your message...',
+  };
+  
+  // Form data
+  let formData = {
+    name: '',
+    email: '',
+    message: ''
+  };
+
+  // Handle form submission
+  // @ts-ignore
+  function handleSubmit(event) {
+    event.preventDefault();
+    console.log('Form Data:', formData);
+    // Add any logic to handle the form submission here, like sending data to an API.
+  }
+</script>
+
+<section class="bg-blue-700 border border-blue-700 p-8 rounded-lg w-full max-w-lg mx-auto mt-10">
+  <form class="flex flex-col space-y-6" on:submit={handleSubmit}>
+    <h3 class="text-lime-200 font-extrabold text-2xl text-left mb-2">Send Us a Message</h3>
+    
+    <Label class="space-y-2">
+      <h4 class="text-lime-200 font-bold">Full Name</h4>
+      <Input 
+        type="text" 
+        name="name" 
+        placeholder="John Doe" 
+        bind:value={formData.name} 
+        required 
+      />
+    </Label>
+    
+    <Label class="space-y-2">
+      <h4 class="text-lime-200 font-bold">Email</h4>
+      <Input 
+        type="email" 
+        name="email" 
+        placeholder="johndoe@gmail.com" 
+        bind:value={formData.email} 
+        required 
+      />
+    </Label>
+    
+    <Label class="space-y-2">
+      <h4 class="text-lime-200 font-bold">Write your message</h4>
+      <Textarea 
+        {...textareaprops} 
+        bind:value={formData.message} 
+        required 
+      />
+    </Label>
+    
+    <Button 
+      type="submit" 
+      class="w-full bg-blue-700 text-lime-200 border-2 border-lime-200 hover:border-0 hover:text-bold hover:bg-lime-200 hover:text-blue-700"
+    >
+      Submit
+    </Button>
+  </form>
+</section>
