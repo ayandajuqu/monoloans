@@ -1,5 +1,6 @@
 <script>
-  import ContactModal from "../../../components/forms/contactModal.svelte";
+  import Footer from "../../../components/footer.svelte";
+import ContactModal from "../../../components/forms/contactModal.svelte";
   import Navbar from "../../../components/navbar.svelte";
   
   
@@ -75,4 +76,5 @@
     {/each}
   </div>
 
+  <Footer/>
 </section>

@@ -1,5 +1,6 @@
 <script>
-    import Navbar from "../../../components/navbar.svelte";
+    import Footer from "../../../components/footer.svelte";
+import Navbar from "../../../components/navbar.svelte";
     import Jobs from "../../../components/tables/jobs.svelte";
     
   
@@ -78,5 +79,5 @@
       {/each}
     </div>
   
+    <Footer/>
   </section>
-  

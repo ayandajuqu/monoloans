@@ -1,5 +1,6 @@
 <script>
-    import ApplyModal from "../../../components/forms/applyModal.svelte";
+    import Footer from "../../../components/footer.svelte";
+import ApplyModal from "../../../components/forms/applyModal.svelte";
     import Navbar from "../../../components/navbar.svelte";
     import {Button, P }from 'flowbite-svelte';
   
@@ -72,5 +73,5 @@
         ></div>
       {/each}
     </div>
+    <Footer/>
   </section>
-  

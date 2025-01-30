@@ -5,6 +5,7 @@
     import pic1 from '../../../public/african-girl-summer-city.jpg'
     import pic2 from '../../../public/smiley-man-wearing-white-shirt-medium-shot.jpg'
     import pic3 from '../../../public/smiley-curly-haired-woman-wearing-sunglasses.jpg'
+  import Footer from "../../../components/footer.svelte";
   
     // Function to generate random floating elements
     const floatingElements = Array(20)
@@ -89,5 +90,6 @@
       {/each}
     </div>
   
+    <Footer/>
   </section>
   

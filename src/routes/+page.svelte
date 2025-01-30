@@ -3,6 +3,7 @@
     import Intro from '../components/intro.svelte';
     import SucessStory from '../components/sucessStory.svelte';
     import Statistics from '../components/statistics.svelte';
+  import Footer from '../components/footer.svelte';
    
   </script>
   
@@ -12,6 +13,7 @@
     <Intro/>
     <Statistics/>
     <SucessStory/>
+    <Footer/>
     
     
   </div>

@@ -51,7 +51,7 @@
 
 <Popup bind:open={formModal}/>
 
-<section class="bg-blue-700 border border-blue-700 p-8 rounded-lg w-full max-w-lg mx-auto mt-2">
+<section class="bg-blue-700 border border-blue-700 p-8 rounded-lg w-full max-w-lg mx-auto mt-2 mb-2">
   <form class="flex flex-col space-y-6" on:submit={handleSubmit}>
     <h3 class="text-lime-200 font-extrabold text-2xl text-left mb-2">Send Us a Message</h3>
     
