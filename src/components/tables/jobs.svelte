@@ -2,12 +2,21 @@
 <script>
     import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell, Button } from 'flowbite-svelte';
     import JobApplicationModal from '../modals/jobApplication.svelte';
+    import Confrimation from '../modals/confrimation.svelte';
+    
 
     let formModal = false;
+    let thankYouModal=false;
+
+    function handleFormSubmission() {
+    formModal = false;       
+    thankYouModal = true;    
+  }
+    
 </script>
 
-    
-<JobApplicationModal bind:open={formModal} />
+<Confrimation bind:open={thankYouModal}/>
+<JobApplicationModal bind:open={formModal} on:formSubmitted={handleFormSubmission}/>
   
   <Table  noborder={true} shadow >
     <TableHead class="bg-indigo-300 px-20 py-20">

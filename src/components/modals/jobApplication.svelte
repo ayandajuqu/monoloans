@@ -1,16 +1,26 @@
 <script>
+// @ts-nocheck
+
     import { Button, Modal, Label, Input, Fileupload, Helper } from 'flowbite-svelte';
     export let open = false;
     import Dropzone from './Dropzone.svelte';
-    import ConfrimationModal from "../../components/modals/confrimation.svelte";
 
-    let formModal=false;
+    import { createEventDispatcher } from 'svelte';
+
+    const dispatch = createEventDispatcher();
+
+    function submitForm() {
+      dispatch('formSubmitted');  
+      open = false;
+    }
+    
   </script>
-<ConfrimationModal bind:open={formModal}/>
 
-  
+
+ 
+
   <Modal bind:open={open} size="md" autoclose={false} class="w-full bg-indigo-200">
-    <form class="flex flex-col space-y-6" action="#">
+    <form class="flex flex-col space-y-6" action='#'  on:submit|preventDefault={submitForm}>
       <h3 class="text-blue-700 font-extrabold text-2xl text-left mb-2 mt-10  mb-4">Apply for position</h3>
       <Label class="space-y-2">
         <h4 class="text-blue-700 font-bold">Full Name (As Per ID)</h4>
@@ -30,7 +40,7 @@
         <Dropzone/>
       </Label>
       
-      <Button type="submit" on:click={() => formModal = true} class="w-full1 bg-indigo-200  font-bold text-blue-700 border-2 border-blue-700 hover:border-0 hover:text-bold hover:bg-lime-200 hover:text-blue-700">Submit Application</Button>
+      <Button type="submit"  class="w-full1 bg-indigo-200  font-bold text-blue-700 border-2 border-blue-700 hover:border-0 hover:text-bold hover:bg-lime-200 hover:text-blue-700">Submit Application</Button>
       
     </form>
   </Modal>

@@ -13,16 +13,16 @@ export async function POST({ request }: { request: Request }): Promise<Response>
   try {
     
     const { name, email, message }: EmailRequest = await request.json();
-    console.log('Request body:', { name, email, message });
+    
 
     const response =await resend.emails.send({
-      from: 'ms.ayandajuqu@gmail.com',
+      from: 'Ayanda <onboarding@resend.dev>',
       to: [email], 
       subject: 'MonoLoans Received Your Message!',
       html: `Hi ${name}, Thank you for reaching out! We received your message.</p>`,
     });
 
-    console.log('Resend response:', response); 
+    
     
     return new Response(JSON.stringify({ success: true }), { status: 200 });
 

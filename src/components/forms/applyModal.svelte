@@ -3,8 +3,10 @@
 
   import { Button, Label, Input, Fileupload, Helper, Select } from 'flowbite-svelte';
   import Dropzone from '../modals/Dropzone.svelte';
-  let selected;
+  import ThankYou from '../modals/thankYou.svelte';
 
+  let selected;
+  let formModal=false;
   let loanTypes = [
     { value: 'pl', name: 'Personal Loan' },
     { value: 'sl', name: 'Student Loan' },
@@ -24,9 +26,23 @@
   function handleSubmit(event) {
     event.preventDefault();
     console.log('Form Data:', formData);
-    // Add any logic to handle the form submission here, like sending data to an API.
+    formModal=true;
+
+    //clear forms
+    formData = {
+    firstName: '',
+    lastName: '',
+    email: '',
+    identification: '',
+    profileImage: null,
+    idCopy: null
+  };
+
+  selected = null;
   }
 </script>
+
+<ThankYou bind:open={formModal}/>
 
 <section class="bg-indigo-200 p-8 rounded-lg w-full max-w-2xl mx-auto mt-8">
   <form class="flex flex-col space-y-6" on:submit={handleSubmit}>
@@ -67,6 +83,7 @@
         name="identification" 
         bind:value={formData.identification} 
         required 
+        pattern="^\d{13}$"
       />
     </Label>
     
