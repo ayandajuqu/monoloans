@@ -19,12 +19,7 @@ export async function POST({ request }: { request: Request }): Promise<Response>
       from: 'ms.ayandajuqu@gmail.com',
       to: [email], 
       subject: 'MonoLoans Received Your Message!',
-      html: `<p>Hi ${name},</p>
-             <p>Thank you for reaching out! We have received your message and will get back to you soon.</p>
-             <p>Here’s what you sent:</p>
-             <blockquote>${message}</blockquote>
-             <p>Best Regards,</p>
-             <p>MonoLoans Team :)</p>`,
+      html: `Hi ${name}, Thank you for reaching out! We received your message.</p>`,
     });
 
     console.log('Resend response:', response); 

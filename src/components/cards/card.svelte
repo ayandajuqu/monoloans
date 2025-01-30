@@ -1,13 +1,13 @@
 <script lang="ts">
     import { Card } from 'flowbite-svelte';
-    import { GiftBoxSolid, ArrowUpRightFromSquareOutline } from 'flowbite-svelte-icons';
+    import {  ArrowUpRightFromSquareOutline } from 'flowbite-svelte-icons';
     
     
     export let title: string = "Need a help in Claim?";
     export let description: string = "bbbbbbbbbbbbbbbb fghjkllfgh wtghvnfim wbtngimyh,o bluh blhu bluh bluh bhlu bluh blhu bhlujb bhnhmhujnb  urpbiylun bjhunjhn ";
     export let linkText: string = "See our terms and conditions";
     export let linkHref: string = "https://www.linkedin.com/in/ayanda-juqu-67a655300/";
-    export let icon = GiftBoxSolid; 
+   
   </script>
   
   <Card class="w-96 h-64 rounded-2xl bg-orange-50 border border-blue-700 mt-20 ml-20 transition duration-500 hover:-translate-y-4">
